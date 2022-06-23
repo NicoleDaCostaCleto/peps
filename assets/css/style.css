@@ -1,0 +1,580 @@
+/* Construction de mon fichier CSS */
+/* 1. Je customise les éléments globaux (p, a, h1, h2, etc..) + bouton */
+
+/* Font Roboto */
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto Regular", sans-serif;
+}
+
+/* header avec menu navigation */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 3rem;
+}
+
+header .header-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    list-style: none;
+    padding-bottom: 1.5rem;
+}
+
+header .header-menu li a {
+    padding: 0 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Roboto Regular", sans-serif;
+}
+
+/* Bordure menu navigation */
+header .header-menu li:not(:last-child) a {
+    border-right: 1px solid black;
+}
+
+/* Banniere */
+#banniere {
+    background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banniere h1 {
+    color: black;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 60px;
+    width: 100%;
+}
+
+.btn1 {
+    height: 1rem;
+    width: 10rem;
+    font-weight: bold;
+    background-color: #FF4676;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    transition: 0.25s ease;
+    text-decoration: none;
+    margin: 3rem;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #FF4676;
+}
+
+/* Central text avec photo */
+.titre {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#central_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+#image_approche img {
+    margin-right: 5rem;
+}
+
+#text_central ul {
+    list-style-type: "-     ";
+}
+
+.separation {
+    background-image: url(../img/Ligne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    height: 5px;
+    margin-bottom: 3rem;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.btn2 {
+    height: 1rem;
+    width: 10rem;
+    font-weight: bold;
+    background-color: white;
+    color: #FF4676;
+    padding: 1rem 1rem;
+    border: 1px solid #FF4676;
+    border-radius: 3px;
+    transition: 0.25s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn2:hover {
+    background-color: #FF4676;
+    color: white;
+}
+
+/* menu 4 icones */
+#menu_4_choix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+}
+
+.choix_4 {
+    text-align: center;
+    height: 15rem;
+    width: 18rem;
+    margin: 0rem 5rem;
+}
+
+.choix_4 img {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text_reduit {
+    font-size: 0.7rem;
+}
+
+/* Menu 3 Peps */
+
+#titre_peps_conteneur {
+    display: flex;
+    justify-content: center;
+}
+
+.titre_peps {
+    height: 20rem;
+    width: 15rem;
+    margin: 0rem 3rem 2rem 3rem;
+    text-align: center;
+    position:relative;
+}
+
+.titre_peps p {
+    line-height: 2rem;
+}
+
+#titre_peps1 h3 {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 3rem;
+}
+
+#titre_peps1 h3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -11px;
+    left: 0;
+    border-bottom: 1.5rem solid #68D8EE;
+    font-size: 1.3rem;
+    z-index: -1;
+}
+
+#titre_peps2 h3 {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 3rem;
+}
+
+#titre_peps2 h3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: -11px;
+    left: 0;
+    border-bottom: 1.5rem solid #FFE17A;
+    font-size: 1.3rem;
+    z-index: -1;
+}
+
+#titre_peps3 .btn2 a {
+    height: 20rem;
+}
+
+#titre_peps3 h3 {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 3rem;
+}
+
+#titre_peps3 h3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: -11px;
+    left: 0;
+    border-bottom: 1.5rem solid #DB7CF2;
+    font-size: 1.3rem;
+    z-index: -1;
+}
+
+.text_peps {
+    height: 9rem;
+    width: 100%;
+}
+
+.btn3 {
+    height: 1rem;
+    width: 10rem;
+    font-weight: bold;
+    background-color: white;
+    color: #FF4676;
+    padding: 10px 12px;
+    border: 1px solid #FF4676;
+    border-radius: 3px;
+    transition: 0.25s ease;
+    text-decoration: none;
+    position: absolute;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn3:hover {
+    background-color: #FF4676;
+    color: white;
+}
+
+/* menu team avec 3 photos */
+#team_conteneur {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+}
+
+.team {
+    text-align: center;
+    height: 25rem;
+    width: 20rem;
+    padding: 0rem 1rem;
+    border: 1px solid #68D8EE;
+    margin: 0rem 1rem;
+}
+
+.image_team img {
+    margin-top: -3rem;
+    border: 20px solid white;
+}
+
+/* première blog */
+#menu_blog1 {
+    display: flex;
+    justify-content: space space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 3rem;
+    margin: 3rem 4rem;
+    border-bottom: 2px solid #68D8EE;
+}
+
+#menu_blog1 img{
+    margin-right: 8rem;
+}
+
+/* deuxième blog */
+#menu_blog2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 3rem;
+    margin: 3rem 4rem;
+}
+
+/* deuxième blog */
+#menu_blog2 img {
+    margin-right: 8rem;
+}
+
+/* footer logo + contact */
+#conteneur_footer {
+    display: flex;
+    align-items: center;
+    background-color: #abb8c3;
+    width:100%;
+}
+
+#logo_footer img {
+    margin-left: 20rem;
+    padding: 4rem;
+    border-right: 1px solid black;
+}
+
+#text_footer {
+    padding: 1rem 4rem;
+}
+
+#text_footer a {
+    color: black;
+    text-decoration: none;
+}
+
+/* footer menu navigation */
+footer #pied_de_page {
+    display: flex;
+    justify-content: center;
+    background-color: #abb8c3;
+    text-align: center;
+    padding-bottom: 1rem;
+    width:100%;
+}
+
+footer #pied_de_page ul {
+    display: flex;
+    list-style: none;
+}
+
+footer #pied_de_page ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+/* Bordure menu footer */
+footer #pied_de_page li:not(:last-child) a {
+    border-right: 1px solid black;
+}
+
+@media screen and (max-width: 992px) {
+
+    header .header-menu li a {
+        padding: 0 0.5rem;
+        font-size: 15px;
+    }
+
+    #central_text {
+        flex-direction: column;
+    }
+
+    #text_central {
+        margin-top: 1rem;
+    }
+
+    #menu_4_choix {
+        height: 55rem;
+    }
+
+    .titre_peps {
+        margin: 0rem 0.5rem;
+    }
+
+    .text_peps {
+        height: 8rem;
+    }
+
+    #team_conteneur {
+        height: 35rem;
+    }
+
+    .team {
+        padding-bottom: 5rem;
+    }
+
+   
+
+    #logo_footer img {
+        margin-left: 10rem;
+    }
+
+    
+    footer #pied_de_page {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    header .header-menu li a {
+        font-size: 10px;
+    }
+
+    #banniere h1{
+        font-size: 35px;
+    }
+
+    #image_approche img {
+        margin: 0rem 3rem 3rem 3rem;
+    }
+
+    #menu_4_choix {
+        height: 70rem;
+    }
+    
+    .choix_4 {
+        text-align: center;
+        height: 15rem;
+        width: 15rem;
+        margin: 0rem 4.5rem;
+    }
+
+    #peps {
+        display:flex;
+        justify-content: center;
+    }
+
+    #titre_peps_conteneur {
+        flex-direction: column;
+    }
+
+    #team_conteneur {
+    flex-direction: column;
+    height: 90rem;
+    align-items: center;
+    }
+
+    .team {
+    margin:3rem 0rem;
+    }
+
+    #menu_blog1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu_blog1 img {
+        margin-bottom: 1rem;
+        margin-right:0rem;
+    }
+
+    #text_blog1 {
+        text-align: center;
+    }
+
+    #menu_blog2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu_blog2 img {
+        margin-bottom: 1rem;
+        margin-right:0rem;
+    }
+
+    #text_blog2 {
+        text-align: center;
+    }
+
+
+    #logo_footer img {
+        margin-left: -1rem;
+    }
+
+    
+    footer #pied_de_page {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+   
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header img {
+        width: 3rem;
+        padding-top: 1rem;
+    }
+
+    header .header-menu {
+        flex-direction: column;
+        }
+
+    header .header-menu li:not(:last-child) a {
+        border-right: none;
+    }
+    
+    header .header-menu li a {
+        font-size: 13px;
+    }
+
+    #banniere h1 {
+        font-size: 25px;
+    }
+
+    #text_central {
+        margin-left: 3rem;
+    }
+
+    .titre {
+        margin: 3rem 1rem;
+    }
+
+    #menu_4_choix {
+        height: 65rem;
+    }
+    
+    .choix_4 {
+        text-align: center;
+        height: 15rem;
+        width: 13rem;
+        margin: 1rem 2rem;
+    }
+.team p {
+    margin: 0rem 1rem;
+}
+    #conteneur_footer {
+        flex-direction: column;
+    }
+    
+    #logo_footer img {
+        margin-left: 0rem;
+        border-right: 0;
+        padding: 1rem;
+    }
+    
+    #text_footer {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    footer #pied_de_page ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding:0rem;
+    }
+
+    footer #pied_de_page li:not(:last-child) a {
+        border-right: none;
+    }
+}
